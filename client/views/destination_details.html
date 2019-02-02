@@ -1,0 +1,24 @@
+<a href="#/destinations">Go Back</a>
+<div class="panel panel-default" ng-init="getDestination()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{destination.title}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{destination.image_url}}">
+      </div>
+      <div class="col-md-8">
+        </p>{{destination.description}}</p>
+        <ul class="list-group">
+          <li class="list-group-item">Country: {{destination.country}}</li>
+        </ul>
+        <a target="_blank" href="{{destination.book_hotel_url}}" class="btn btn-primary">Book hotel</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pull-right">
+  <a href="#/destinations/edit/{{destination._id}}">Edit</a> |  <a href="#" ng-click="removeDestination(destination._id)">Delete</a>
+  </div>

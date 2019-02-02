@@ -1,0 +1,42 @@
+<a href="#/destinations">Go Back</a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add destination</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+      <form ng-submit="addDestination()">
+        <div class="form-group">
+          <label>Destination</label>
+          <input type="text" class="form-control" ng-model="destination.title" placeholder="Title">
+        </div>
+        <div class="form-group">
+          <label>Country</label>
+          <select ng-model="destinations.country" class="form-control">
+            <option value="Norway">NORWAY</option>
+            <option value="Sweden">SWEDEN</option>
+            <option value="Finalnd">FINLAND</option>
+            <option value="Iceland">ICELAND</option>
+            <option value="Other">OTHER</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <textarea class="form-control" ng-model="destination.description" placeholder="Description"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Image URL</label>
+          <input type="text" class="form-control" ng-model="destination.image_url" placeholder="Image URL">
+        </div>
+        <div class="form-group">
+          <label>Book Hotel URL</label>
+          <input type="text" class="form-control" ng-model="destination.book_hotel_url" placeholder="Book hotel URL">
+        </div>
+       
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
