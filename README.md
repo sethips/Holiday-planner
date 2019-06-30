@@ -9,5 +9,5 @@ This application keeps track of places you wish to travel. It uses angular and b
 
 `node app`
 
-Open the url localhost:1234
+Open the url `localhost:1234`
 
